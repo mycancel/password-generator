@@ -118,6 +118,19 @@ button[disabled] {
   overflow: hidden;
 }
 
+.popup {
+  text-align: center;
+  width: 400px;
+  padding: 12px 8px 16px 8px;
+  background-color: hsl(0, 0%, 100%);
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  position: absolute;
+  transform: translate(-50%, -100%);
+  left: 50%;
+  top: 50%;
+}
+
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
