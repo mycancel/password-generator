@@ -141,7 +141,7 @@ button[disabled] {
   padding: 4px 8px;
 }
 
-#character-text:placeholder-shown {
+#character-text {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
