@@ -141,6 +141,29 @@ button[disabled] {
   padding: 4px 8px;
 }
 
+.popup input:placeholder-shown {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-bottom: 2px dashed #c0c7cf;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-right: 16px;
+}
+
+.popup input:focus {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #c0c7cf;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-right: 16px;
+}
+
 ul {
   list-style: none;
   text-align: left;
