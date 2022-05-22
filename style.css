@@ -141,7 +141,7 @@ button[disabled] {
   padding: 4px 8px;
 }
 
-.popup input:placeholder-shown {
+.character-text:placeholder-shown {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -152,7 +152,7 @@ button[disabled] {
   margin-right: 16px;
 }
 
-.popup input:focus {
+.character-text:focus {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
