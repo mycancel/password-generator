@@ -126,9 +126,16 @@ button[disabled] {
   border: 2px solid rgba(0, 0, 0, 0.15);
   border-radius: 6px;
   position: absolute;
-  transform: translate(-50%, -100%);
+  transform: translate(-50%, -100%) scale(0.95,0.95);
   left: 50%;
   top: 50%;
+  transition: all 250ms ease;
+  visibility: hidden;
+}
+
+.popup-open {
+  visibility: visible;
+  transform: translate(-50%, -100%) scale(1,1);
 }
 
 .submit {

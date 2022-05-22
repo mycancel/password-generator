@@ -30,13 +30,13 @@
         </div>
 
         <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
+          <button id="generate" class="btn" onclick="openCharacter()">Generate Password</button>
         </div>
 
       </div>
     </div>
 
-    <form class="popup">
+    <form class="popup" id="characterPopup">
       <p>How many characters will be in your password?</p>
       <input type="text" placeholder="Number between 8 and 128" id="character-text">
       <button class="submit">Submit</button>
@@ -52,7 +52,7 @@
       <button class="submit">OK</button>
     </div> -->
 
-    <form class="popup">
+    <!-- <form class="popup">
       <p>Select one or more of the following:</p>
         <ul id="checklist">
           <li>
@@ -73,7 +73,7 @@
           </li>  
         </ul>
       <button class="submit">Submit</button>
-    </form>
+    </form> -->
 
     <!-- <div class="popup">
       <p>At least one character type must be selected.</p>
