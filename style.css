@@ -136,9 +136,15 @@ button[disabled] {
   border: none;
   background-color: rgb(49, 49, 49);
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 15px;
   color:hsl(0, 0%, 100%);
-  padding: 4px 6px;
+  padding: 4px 8px;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+  margin-left: 28px;
 }
 
 @media (max-width: 690px) {
