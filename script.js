@@ -16,5 +16,6 @@ generateBtn.addEventListener("click", writePassword);
 // Opens the first popup. Code inspired by Easy Tutorials Youtube video: https://youtu.be/AF6vGYIyV8M.
 function openCharacter() {
   characterPopup.classList.add("popup-open");
-  console.log("hello 1");
+  console.log("Opened characterPopup");
+  return;
 }

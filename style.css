@@ -148,7 +148,7 @@ button[disabled] {
   padding: 4px 8px;
 }
 
-#character-text {
+#count {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -159,7 +159,7 @@ button[disabled] {
   margin-right: 16px;
 }
 
-#character-text:focus {
+#count:focus {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
