@@ -9,11 +9,17 @@ function generatePassword() {
   var uppercase = lowercase.toUpperCase();
 
   var input = parseInt(prompt("How many characters will be in your password?"));
+  console.log(input);
 
   if (input >= 8 && input <= 128) {
     // Code in this portion of the template is my contribution.
+    var promptLower= true;
+    var promptLower = confirm("Will your password include lowercase letters?");
+    console.log(promptLower);
+
   } else {
     alert("Password length must between 8 and 128 characters.");
+    writePassword();
   }
 
   return "";
