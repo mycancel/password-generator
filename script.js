@@ -13,21 +13,40 @@ function generatePassword() {
 
   if (input >= 8 && input <= 128) {
     // Code in this portion of the template is my contribution.
-    var promptLower = true;
+    var acceptedCharacters = ""
+
     var promptLower = confirm("Will your password include lowercase letters?");
     console.log(promptLower);
+    
+    if (promptLower == true) {
+      acceptedCharacters = acceptedCharacters.concat(lowercase);
+      console.log(acceptedCharacters);
+    } 
 
-    var promptUpper = true;
     var promptUpper = confirm ("Will your password include uppercase letters?");
     console.log(promptUpper);
 
-    var promptNum = true;
+    if (promptUpper == true) {
+          acceptedCharacters = acceptedCharacters.concat(uppercase);
+          console.log(acceptedCharacters);
+        } 
+
     var promptNum = confirm ("Will your password include numbers?");
     console.log(promptNum);
 
-    var promptSpecial = true;
+    if (promptNum == true) {
+      acceptedCharacters = acceptedCharacters.concat(numbers);
+      console.log(acceptedCharacters);
+    } 
+
     var promptSpecial = confirm ("Will your password include special characters?");
     console.log(promptSpecial);
+
+    if (promptSpecial == true) {
+      acceptedCharacters = acceptedCharacters.concat(special);
+      console.log(acceptedCharacters);
+    } 
+
 
   } else {
     alert("Password length must a number between 8 and 128 characters.");
