@@ -50,6 +50,13 @@ function generatePassword() {
     if (promptLower == false && promptUpper == false && promptNum == false && promptSpecial == false){
       alert("At least one character type must be selected.");
       return writePassword();
+    } else {
+      var password = ""
+      for (var i=0; i < input; i ++) {
+        var random = Math.floor(Math.random() * acceptedCharacters.length);
+        password = password + acceptedCharacters.slice(random,(random + 1));
+        console.log(password);
+      }
     }
 
   } else {
@@ -57,7 +64,7 @@ function generatePassword() {
     return writePassword();
   }
 
-  return "";
+  return password;
 }
 
 
