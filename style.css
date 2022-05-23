@@ -118,64 +118,6 @@ button[disabled] {
   overflow: hidden;
 }
 
-.popup {
-  text-align: center;
-  width: 400px;
-  padding: 12px 8px 16px 8px;
-  background-color: hsl(0, 0%, 100%);
-  border: 2px solid rgba(0, 0, 0, 0.15);
-  border-radius: 6px;
-  position: absolute;
-  transform: translate(-50%, -100%) scale(0.95,0.95);
-  left: 50%;
-  top: 50%;
-  transition: all 250ms ease;
-  visibility: hidden;
-}
-
-.popup-open {
-  visibility: visible;
-  transform: translate(-50%, -100%) scale(1,1);
-}
-
-.submit {
-  cursor: pointer;
-  border: none;
-  background-color: rgb(49, 49, 49);
-  border-radius: 8px;
-  font-size: 15px;
-  color:hsl(0, 0%, 100%);
-  padding: 4px 8px;
-}
-
-#count {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  border-bottom: 2px dashed #c0c7cf;
-  padding-left: 8px;
-  padding-right: 8px;
-  margin-right: 16px;
-}
-
-#count:focus {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  outline: none;
-  border-bottom: 2px solid #c0c7cf;
-  padding-left: 8px;
-  padding-right: 8px;
-  margin-right: 16px;
-}
-
-ul {
-  list-style: none;
-  text-align: left;
-  margin-left: 28px;
-}
 
 @media (max-width: 690px) {
   .btn {
