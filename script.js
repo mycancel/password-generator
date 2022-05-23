@@ -8,12 +8,12 @@ function generatePassword() {
   var special = "#$%&()*+,-./:;<=>?";
   var uppercase = lowercase.toUpperCase();
 
-  var input = parseInt(prompt("Choose a lenght between 8 and 128"));
+  var input = parseInt(prompt("How many characters will be in your password?"));
 
   if (input >= 8 && input <= 128) {
     // Code in this portion of the template is my contribution.
   } else {
-    alert("NOT COOL");
+    alert("Password length must between 8 and 128 characters.");
   }
 
   return "";
