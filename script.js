@@ -47,6 +47,10 @@ function generatePassword() {
       console.log(acceptedCharacters);
     } 
 
+    if (promptLower == false && promptUpper == false && promptNum == false && promptSpecial == false){
+      alert("At least one character type must be selected.");
+      return writePassword();
+    }
 
   } else {
     alert("Password length must a number between 8 and 128 characters.");
