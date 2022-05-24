@@ -53,7 +53,8 @@ function generatePassword() {
 
     // If no character type is selected, an alert is given and the user will be prompted again.
     if (promptLower == false && promptUpper == false && promptNum == false && promptSpecial == false){
-      alert("At least one character type must be selected. Please try again.");
+      alert("At least one character type must be selected. \nPlease try again.");
+      return "";
     } else {
       // However, if at least one of the character types are selected, the password is created using those selected types.
       // Variable passDraft will hold the password created by the randomizer.
@@ -67,7 +68,8 @@ function generatePassword() {
     }
 
   } else {
-    alert("Password length must a number between 8 and 128 characters. Please try again.");
+    alert("Password length must a number between 8 and 128 characters. \nPlease try again.");
+    return "";
   }
 
   // Variable passDraft is returned by the function to be written using writePassword().
