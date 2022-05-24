@@ -10,7 +10,6 @@ function generatePassword() {
   
   var input;
   input = parseInt(prompt("How many characters will be in your password?"));
-  console.log(input);
 
   if (input >= 8 && input <= 128) {
     // Code in this portion of the template is my contribution.
@@ -19,36 +18,28 @@ function generatePassword() {
 
     // Confirmation prompts for each character type.
     var promptLower = confirm("Will your password include lowercase letters?");
-    console.log(promptLower);
-
+    
     var promptUpper = confirm ("Will your password include uppercase letters?");
-    console.log(promptUpper);
-
+    
     var promptNum = confirm ("Will your password include numbers?");
-    console.log(promptNum);
 
     var promptSpecial = confirm ("Will your password include special characters?");
-    console.log(promptSpecial);
 
     // If the user confirms the character type, the associated variable string is added to the acceptedCharacter string.
     if (promptLower == true) {
       acceptedCharacters = acceptedCharacters.concat(lowercase);
-      console.log(acceptedCharacters);
     } 
 
     if (promptUpper == true) {
       acceptedCharacters = acceptedCharacters.concat(uppercase);
-      console.log(acceptedCharacters);
     } 
 
     if (promptNum == true) {
       acceptedCharacters = acceptedCharacters.concat(numbers);
-      console.log(acceptedCharacters);
     } 
 
     if (promptSpecial == true) {
       acceptedCharacters = acceptedCharacters.concat(special);
-      console.log(acceptedCharacters);
     } 
 
     // If no character type is selected, an alert is given and the user will be prompted again.
@@ -63,7 +54,6 @@ function generatePassword() {
       for (var i=0; i < input; i ++) {
         var random = Math.floor(Math.random() * acceptedCharacters.length);
         passDraft = passDraft + acceptedCharacters.slice(random,(random + 1));
-        console.log(passDraft);
       }
     }
 
