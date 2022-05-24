@@ -51,11 +51,11 @@ function generatePassword() {
       alert("At least one character type must be selected.");
       return writePassword();
     } else {
-      var password = ""
+      var passDraft = ""
       for (var i=0; i < input; i ++) {
         var random = Math.floor(Math.random() * acceptedCharacters.length);
-        password = password + acceptedCharacters.slice(random,(random + 1));
-        console.log(password);
+        passDraft = passDraft + acceptedCharacters.slice(random,(random + 1));
+        console.log(passDraft);
       }
     }
 
@@ -64,7 +64,7 @@ function generatePassword() {
     return writePassword();
   }
 
-  return password;
+  return passDraft;
 }
 
 
