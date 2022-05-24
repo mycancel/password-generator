@@ -8,8 +8,7 @@ function generatePassword() {
   var numbers = "0123456789";
   var special = "#$%&()*+,-./:;<=>?";
   
-  var input;
-  input = parseInt(prompt("How many characters will be in your password?"));
+  var input = parseInt(prompt("How many characters will be in your password?"));
 
   if (input >= 8 && input <= 128) {
     // Code in this portion of the template is my contribution.
@@ -47,9 +46,11 @@ function generatePassword() {
       alert("At least one character type must be selected. \nPlease try again.");
       return "";
     } else {
+
       // However, if at least one of the character types are selected, the password is created using those selected types.
       // Variable passDraft will hold the password created by the randomizer.
       var passDraft = ""
+
       // For each character in the password, a random character is selected from the acceptedCharacter list and added to passDraft until the length inputed by the user is reached.
       for (var i=0; i < input; i ++) {
         var random = Math.floor(Math.random() * acceptedCharacters.length);
